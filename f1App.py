@@ -20,7 +20,7 @@ def getTrack(trackName):
     url = "https://www.formula1.com/en/racing/2021/" + str(trackName) + ".html"
     html = pd.read_html(url, header=0)
     df = html[0]
-    raw = df.drop(df[df.Age == 'Age'].index)
+    raw = df.drop(df[df.Lang == 'en'].index)
     raw = raw.fillna(0)
     trackStats = raw.drop(['Rk'], axis=1)
     return trackStats
