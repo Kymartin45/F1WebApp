@@ -1,3 +1,7 @@
+# Updated 2021 drivers list
+# Will change if needed
+# Source: https://www.goodwood.com/grr/race/modern/2020/12/f1-2021-drivers-and-teams/
+
 from pprint import pprint
 
 driverNames = [
